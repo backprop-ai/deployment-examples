@@ -47,5 +47,6 @@ print(model({"some_parameter": "Example 123"}, task="custom"))
 
 # Set the below line to save dependencies!
 dill.settings["recurse"] = True
+# Serialize the model object into a file called model.bin
 with open("model.bin", "wb") as f:
     dill.dump(model, f)
