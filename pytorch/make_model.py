@@ -42,8 +42,8 @@ class MyModel(nn.Module):
 # Model must be on cpu
 model = MyModel().to("cpu")
 
-# Verify it works
-print(model({"some_parameter": "Example 123"}, task="custom"))
+# Example local usage
+model({"some_parameter": "Example 123"}, task="custom")
 
 # Set the below line to save dependencies!
 dill.settings["recurse"] = True

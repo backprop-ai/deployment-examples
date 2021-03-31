@@ -1,0 +1,4 @@
+{
+    "description": "This is a basic model that generates nonsense.",
+    "tasks": ["text-generation"]
+}
