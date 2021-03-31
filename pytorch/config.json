@@ -1,0 +1,4 @@
+{
+    "description": "This is an example PyTorch model.",
+    "tasks": ["text-classification", "text-vectorisation", "custom"]
+}
