@@ -1,5 +1,7 @@
-*/model.bin
-*/model.zip
+*/*.bin
+*/*.zip
+*/*.h5
+*/*.pickle
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -42,8 +42,12 @@ class MyModel(nn.Module):
 # Model must be on cpu
 model = MyModel().to("cpu")
 
-# Example local usage
-model({"some_parameter": "Example 123"}, task="custom")
+# How Backprop will call your model on request to /custom endpoint
+request_body = {
+    "some_parameter": "Example 123"
+}
+
+model(request_body, task="custom")
 
 # Set the below line to save dependencies!
 dill.settings["recurse"] = True

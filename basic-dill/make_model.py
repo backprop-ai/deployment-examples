@@ -25,9 +25,14 @@ class MyModel:
 # Make model object
 model = MyModel()
 
-# Example local usage
+# How Backprop will call your model on request to /text-generation endpoint
 # Backprop passes the text-generation API parameters to params and sets task as "text-generation"
-print(model({"text": "Test", "min_length": 3}, task="text-generation"))
+request_body = {
+    "text": "Test",
+    "min_length": 3
+}
+
+print(model(request_body, task="text-generation"))
 
 # Set the below line to save dependencies!
 dill.settings["recurse"] = True
